@@ -42,7 +42,7 @@ jobs:
         run: npm install
 
       - name: 📦 Build Android app
-        run: eas build --platform android --profile preview --local --output ${{ github.workspace }}/app-release.apk
+        run: eas build --platform android --profile preview --output ${{ github.workspace }}/app-release.apk
 
       - name: 📦 Upload APK to GitHub Release
         id: upload-release
